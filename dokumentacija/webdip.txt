@@ -1,0 +1,87 @@
+https://barka.foi.hr/WebDiP/2022/2022_projekti/WebDiP2022x026
+https://barka.foi.hr/WebDiP/2022/zadaca_04/plovrek/index.php
+
+/var/www/WebDiP/2022/zadaca_04/plovrek
+/var/www/webdip.barka.foi.hr/2022/zadaca_01/plovrek
+
+zadaca 4
+XAMPP: localhost/moje_datoteke/zadaca_04/obrasci/autentikacija.php
+
+Projekt
+XAMPP: localhost/moje_datoteke/projekt/registracija.php
+http://localhost/moje_datoteke/projekt/popisIzradenihProfila.php
+
+Projekt online:
+https://barka.foi.hr/WebDiP/2022_projekti/WebDiP2022x026/prijava.php
+
+Predaja na FileZilli
+/var/www/webdip.barka.foi.hr/2022_projekti/WebDiP2022x026
+
+PHPMYADMIN BARKA: https://barka.foi.hr/phpmyadmin/
+
+Baza: WebDiP2022x026
+Korisničko ime: WebDiP2022x026
+Lozinka: admin_cnTV
+
+Dvorazinska autentikacija
+Korisničko ime: WebDiP
+Lozinka: 2016foi
+
+killanje procesa na portu
+netstat -ano | findstr :<PORT>
+
+taskkill /PID <PID> /F
+
+Lozinke za testiranje korisnika:
+
+Administrator: 
+Username: plovrek
+Lozinka: N7uCFd11dbV8p9nKzR
+
+Moderator:
+Username: dvrbancic
+Lozinka: asdfghjkloiuA2sjAs2
+
+Username: pperic
+Lozinka: asdfghjkloiuA2sjAs4
+
+Registrirani korisnik:
+Username: ploki
+Lozinka: asdfghjkloiuA2sjAs3
+
+Mail koji nije registriran:
+thehaze050@gmail.com
+
+
+Dijana: 
+Pero Perić: asdfghjkloiuA2sjAs4
+
+Primjer krivih lozinki:
+asdfghjkloiuA2sjAs=
+=asdfghjkloiuA2sjAs=
+
+Stvari za validaciju
+
+JS:
+1) Ime i prezime ne sadržavaju broj
+2) Format boja telefona
+3) Format emaila
+PHP:
+1) Format maila - regex +
+2) Bojanje labela ako vrijednost nije unesena +
+3) Dozvoljeni znakovi ne smiju biti na početku i na kraju lozinke +
+4) Lozinka ne smije imati razmake +
+5) Lozinka mora imati veliko i malo slovo te barem jedan broj +
+6) Lozinka preduga +
+7) Provjera jesu li lozinke iste +
+
+Sortiranje popisa profila:
+1) Datum kreiranja korisnika
+2) 
+
+https://code.jquery.com/jquery-3.6.0.min.js
+
+Greške
+1) Promjeniti format regexa u mailu da username more imati točku - ispravljeno
+
+$datumUnosauDnevnik=date("Y-m-d h:i:s");
