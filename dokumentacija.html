@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Dokumentacija</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="plovrek">
+    <meta name="keywords" content="Glazba, Bend">
+    <meta name="description" content="7.3.2023.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/plovrek.css" type="text/css">
+    <link rel="stylesheet" href="./Css/plovrek_prilagodbe.css" type="text/css">
+    
+</head>
+
+<body>
+    <nav>
+        <a href="prijava.php">Povratak na početnu stranicu</a>
+</nav>
+    <header>
+        <div class="traka-izbornika">
+        <div class="logo-jezik">
+        <div class="logo">
+            <a href="./prijava.php"><img src="./Multimedija/logo.png" alt="logo"></a>
+        </div>
+            <div class="sadrzaj_padajuci">
+                <select name="jezici" id="jezici">
+                    <option value="Hrvatski">Hrvatski</option>
+                    <option value="Engleski">Engleski</option>
+                    <option value="Njemački">Njemački</option>
+                </select>
+            
+        </div>
+    </div>
+        <h1 id="pocetak">Dokumentacija</h1>
+        <div id="prozor">
+            <a href="#">
+                <img src="./Multimedija/cancel.png" alt="zatvori" width="25">
+            </a>
+            <form action="http://barka.foi.hr/WebDiP/2022/materijali/zadace/ispis_forme.php">
+                <label for="trazi">Pojam</label>
+                <input type="search" id="trazi" name="trazi">
+                <input type="submit" name="trazi" value="Pretrazi">
+            </form>
+        </div>
+        <div>
+        <div>
+        <a class="search-slika" href="#prozor">
+            <img src="./Multimedija/search.png" alt="trazi" width="25">
+        </a>
+</div>
+    </header>
+    <div style="background-color: rgb(221, 151, 11);">
+    <div>
+    <h2>Opis projektnog zadatka</h2>
+    <div>
+        <p style="color: black;">
+            Ovaj projektni zadatak bio je Promocija proizvoda. <br>
+            Zadatak je strukturiran na način da funkcionira kao web shop. <br>
+            Korisnik ima mogućnost pregledavanja proizvoda koji zatim ulaze u kampanje <br>
+            u kojima korisnik može kupiti navedene proizvode.
+        </p>  
+    </div>
+</div>
+<div>
+    <h2>Opis projektnog rješenja</h2>
+    <div>
+        <p style="color: black;">
+            Smatram da sustav dobro funkcionira. Osnovne funkcionalnosti su sve odrađene <br> osim 2. točke kod Administratora (statistika) te 3. točke kod Moderatora (statistika). <br>
+            Projekt sam pretežito ostvario preko PHP programskog jezika. Također, koristim AJAX za određene funkcionalnosti. <br> Program komunicira s bazom podataka preko klase baza.class.php.
+        </p>  
+    </div>
+</div>
+<div>
+    <h2>ERA Model</h2>
+    <div>
+        <img src="./Multimedija/ERA_model.png" width="auto" height="600"> 
+    </div>
+</div>
+<div>
+    <h2>Navigacijski dijagram</h2>
+    <div>
+        <img src="./Multimedija//plovrek_navigacijski.drawio.png" height="500" width="auto"> 
+    </div>
+</div>
+<div>
+    <h2>Popis .php fileova</h2>
+    <div>
+        <p style="color: black;">
+            1. aktivacija.php - validacija aktivacijskog koda korisnika nakon što mu se kod pošalje na mail. <br>
+            2. blokiraniKorisnici.php - popis svih korisnika te mogućnost blokiranja/odblokiranja pojedinog računa. <br>
+            3. blokiranjeKorisnika.php - skripta za komuniciranje s bazom u svrhu blokiranja korisnika. <br>
+            4. dokumentacija.html - popis skipti i opis projekta. <br>
+            5. izvrsiPlacanje.php - kupovina gdje korisnik bira želi li predmet kupiti eurima ili bodovima. <br>
+            6. kolicinaHiddenElemenata.php - skripta u sklopu AJAX okvira koja u skriveni element kod kupovine postavlja količinu proizvoda. <br>
+            7. kreiranjeKampanje.php - izrada kampanja u koje se stavljaju proizvodi za prodaju. <br>
+            8. kreiranjeProizvoda.php - izrada proizvoda koji idu u prodaju. <br>
+            9. pregledDnevnika.php - zapis logova aktivnosti u aplikaciji te pregled istih. <br>
+            10. prijava.php - početna stranica za prijavu korisnika. <br>
+            11. profil.php - korisnikov profil. <br>
+            12. provjeraBodova.php - preračunavanje bodova kod kupnje. <br>
+            13. provjeraEura.php - preračunavanje eura kod kupnje. <br>
+            14. provjeraKolicineProizvoda.php - postavljanje količine proizvoda u input field kod kupnje. <br>
+            15. provjeraUsernamea.php - skripta u sklopu AJAX okvira koja provjerava username u bazi. <br>
+            16. logout.php - skripta koja prekida sesiju i odjavljuje korisnika. <br>
+            17. o_autoru.html - Podaci o autoru aplikacije. <br>
+            18. odblokiranjeKorisnika.php - skripta za komuniciranje s bazom u svrhu odblokiranja korisnika. <br>
+            19. odredivanjeBodova.php - skripta u sklopu AJAX okvira za dodjeljivanje bodova proizvodu. <br>
+            20. popisIzradenihProfila.php - lista korisnika koji imaju izrađen profil. <br>
+            21. popisKampanja.php - lista aktivnih kampanja koje imaju proizvode spremne za prodaju. <br>
+            22. popisProizvoda.php - lista kreiranih proizvoda. <br>
+            23. provjeraUsernameaPrijava.php - skripta u sklopu AJAX okvira koja provjerava username u bazi. <br>
+            24. registracija.php - stranica za registraciju. <br>
+            25. zaboravljenaLozinka.php - skripta za slanje novogenerirane lozinke na mail korisnika. <br>
+            26. prijavaKod.php - dio prijave implementiran php-om. <br>
+            27. registracijaKod.php - dio registracije implementiran php-om.
+        </p>  
+    </div>
+</div>
+<div>
+    <h2>Popis .php skripti</h2>
+    <div>
+        <p style="color: black;">
+            1. baza.class.php - komunikacija s bazom. <br>
+            2. meni.php - navigacijski meni, posložen prema ulozi korisnika. <br>
+            3. sesija.class.php - skripta za postavljanje korisničke sesije. <br>
+            4. zaglavlje.php - skripta koja spaja baza.class.php i sesija.class.php.
+        </p>  
+    </div>
+</div>
+<div>
+    <h2>Popis JS fileova</h2>
+    <div>
+        <p style="color: black;">
+            1. placanje.js - prikaz odabrane forme i metoed plaćanja (Euri, bodovi). <br>
+            2. plovrek.js - skripta koja sadrži većinski js. <br>
+            3. registracija.js - validacija na strani klijenta. <br>
+            4. slika_profila_jquery.js - sadrži funkciju za prikaz slike profila.
+        </p>  
+    </div>
+</div>
+<div>
+    <h2>Popis korištenih tehnologija i alata</h2>
+    <div>
+        <p style="color: black;">
+            1. Visual Studio Code <br>
+            2. Command prompt <br>
+            3. MySQLWorkbench <br>
+            4. XAMPP <br>
+            5. PHPMYADMIN baza podataka <br>
+        </p>  
+    </div>
+</div>
+<div>
+    <h2>Popis vanjskih biblioteka</h2>
+    <div>
+        <p style="color: black;">
+            1. https://code.jquery.com/jquery-3.6.0.min.js - biblioteka za jquery funkcije.
+        </p>  
+    </div>
+</div>
+<div>
+    <h2>Ostali komentari</h2>
+    <div>
+        <p style="color: black;">
+            Smatram da je projekt dobro odrađen te završen otprilike 55%. <br> 
+            Moglo je svakako biti bolje implementiranih funkcionalnosti, ali s obzirom da mi je ovo prvi veći samostalni projekt <br>
+            ponosan sam na uloženom ogromnom trudu.
+        </p>  
+    </div>
+</div>
+</div>
+    <footer>
+        
+        <address>Kontakt: <a href="mailto:plovrek@foi.hr">Patrik Lovrek</a></address>
+        <a href="https://validator.w3.org/check?uri=https://barka.foi.hr/WebDiP/2022/zadaca_01/plovrek/">
+            <img src="./Multimedija/HTML5.png" alt="HTML" width="50">
+        </a>
+        <a href="https://validator.w3.org/check?uri=https://barka.foi.hr/WebDiP/2022/zadaca_01/plovrek/">
+            <img src="./Multimedija/CSS3.png" alt="CSS" width="50">
+        </a>
+        <div>
+            <p>Privola za prikupljanje podataka</p>
+            <select name="prikupljanje-podataka" id="prikupljanje-podataka">
+                <option value="osnovno">Osnovno</option>
+                <option value="bez-prikupljanja">Bez prikupljanja</option>
+                <option value="sve">Sve</option>
+            </select>
+        </div>
+        <p>&copy; 2023 P.Lovrek</p>
+    </footer>
+</body>
+
+</html>

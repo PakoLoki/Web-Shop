@@ -1,0 +1,32 @@
+/* Printanje */
+
+@media print {
+    header *{
+        visibility: hidden;
+    }
+    nav * {
+        visibility: hidden;
+    }
+
+    footer * {
+        visibility: hidden;
+    }
+    /* Nisam bio siguran, treba li maknuti i povijest pretraživanja pa sam maknuo za svaki slučaj */
+    .povijest * {
+        visibility: hidden;
+    }
+    .print-odabir, .print-odabir *{
+        visibility: visible;
+        filter: grayscale(100%);
+    }
+}
+
+/* Responzivni dizajn */
+
+@media only screen and (min-width: 390px) and (max-width: 800px) {
+    
+    
+    header{
+        width: auto;
+    }
+}
